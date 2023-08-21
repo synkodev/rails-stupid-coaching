@@ -1,0 +1,14 @@
+<div class="container w-50 d-flex flex-column gap-3">
+  <h1 class="h1 mt-5">Stupid coaching</h1>
+
+  <div class="blockquote p-3 rounded shadow bg-light border-left-gray ">
+    <p><%= params[:question] %></p>
+    <p><em>-- You</em></p>
+  </div>
+
+  <div class="blockquote p-3 rounded shadow yellow-answer border-left-gray" id="answer">
+    <p><%= @answer%></p>
+    <p><em>-- Your coach</em></p>
+  </div>
+  <p><%= link_to 'Ask a new question', ask_path, class: 'btn btn-primary' %></p>
+</div>
